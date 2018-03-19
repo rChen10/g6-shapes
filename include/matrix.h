@@ -16,9 +16,9 @@ class matrix{
 
 	matrix(int x, int y);
 	
-	matrix(matrix&& lv);
+	//matrix(matrix&& lv);
 
-	matrix& operator=(matrix&& lv);
+	//matrix& operator=(matrix&& lv);
 
 	matrix& operator+=(std::vector<int>& p);
 

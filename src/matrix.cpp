@@ -16,18 +16,18 @@ matrix::matrix(int x, int y){
 		s = x;
 }
 
-matrix::matrix( matrix&& rv ){
-	m = std::move(rv.m);
-	s = rv.s;
-
-	rv.s = 0;
-}
-
-matrix& matrix::operator=(matrix&& rv){
-	m = std::move(rv.m);
-	s = rv.s;
-	return (*this);
-}
+//matrix::matrix( matrix&& rv ){
+//	m = std::move(rv.m);
+//	s = rv.s;
+//
+//	rv.s = 0;
+//}
+//
+//matrix& matrix::operator=(matrix&& rv){
+//	m = std::move(rv.m);
+//	s = rv.s;
+//	return (*this);
+//}
 
 matrix& matrix::operator+=(std::vector<int>& p){
 	std::vector<double> *dp = new std::vector<double>();
